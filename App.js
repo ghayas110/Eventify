@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { StyleSheet, Text, View,Button } from 'react-native';
-import MyTabs from './screens/MaintabScreen';
+import MyTabs from './screens/Maintabscreen';
 import React from 'react';
 import DrawerContent from './screens/DrawerContent';
 
