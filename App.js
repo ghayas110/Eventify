@@ -1,21 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
+import { NavigationContainer } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { StyleSheet, Text, View,Button } from 'react-native';
+import MyTabs from './screens/Maintabscreen';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import DrawerContent from './screens/DrawerContent';
+
+
+const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hamza Bilal Zafar</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <NavigationContainer>
+    <Drawer.Navigator initialRouteName="Home" drawerContent={props=><DrawerContent {...props}/>}>
+      <Drawer.Screen name="Home" component={MyTabs} />
+    
+    </Drawer.Navigator>
+  </NavigationContainer>
+  
+
+
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
