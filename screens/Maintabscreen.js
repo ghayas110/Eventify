@@ -9,6 +9,7 @@ import ProfileScreen from "./Profilescreen";
 import ExploreScreen from './ExploreScreen';
 import { View,TouchableOpacity } from 'react-native';
 import {Avatar} from 'react-native-paper';
+import CardListScreen from './CardListScreen';
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -117,7 +118,10 @@ const DetailStackScreen =({navigation})=> {
           ),
           
          }}/>
-        
+        <HomeStack.Screen 
+        name="CardListScreen"
+        component={CardListScreen}
+        options={{title:"Birthday Planners",headerTitleAlign: 'center',headerTintColor:"black"}} />
       </HomeStack.Navigator>
       )
     }

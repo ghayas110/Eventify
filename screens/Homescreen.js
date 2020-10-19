@@ -7,6 +7,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import StarRating from "../component/StarRating";
+import CardListScreen from './CardListScreen';
 export default function HomeScreen({navigation}) {
   return (
     <ScrollView style={styles.container}>
@@ -22,7 +23,7 @@ export default function HomeScreen({navigation}) {
   </Swiper>
   </View>
 <View style={styles.categoryContainer}>
-  <TouchableOpacity style={styles.categoryBtn} onPress={()=>{}}>
+  <TouchableOpacity style={styles.categoryBtn} onPress={()=>navigation.navigate(CardListScreen)}>
 <View style={styles.categoryIcon}>
 <MaterialCommunityIcons 
                 name="cake"
@@ -88,7 +89,7 @@ export default function HomeScreen({navigation}) {
 
 <View style={styles.cardsWrapper}>
               <Text style={{alignSelf:"center",fontSize:18,fontWeight:"bold", marginTop:20}} >Featured Event Planners</Text>
-            
+              <TouchableOpacity onPress= {()=>{}}>
               <View style={styles.card}>
                 <View style={styles.cardImgWrapper}>
                 <Image source={require('../assets/event(1).jpg' ) }resizeMode="cover" style={styles.cardImg}/>
@@ -103,6 +104,8 @@ MIP Event Planners
             </Text>
                 </View>
               </View>
+              </TouchableOpacity>
+              <TouchableOpacity onPress= {()=>{}}>
               <View style={styles.card}>
                 <View style={styles.cardImgWrapper}>
                 <Image source={require('../assets/event(2).jpg' ) }resizeMode="cover" style={styles.cardImg}/>
@@ -117,6 +120,8 @@ Shah Event Planners
             </Text>
                 </View>
               </View>
+              </TouchableOpacity>
+              <TouchableOpacity onPress= {()=>{}}>
               <View style={styles.card}>
                 <View style={styles.cardImgWrapper}>
                 <Image source={require('../assets/event(3).jpg' ) }resizeMode="cover" style={styles.cardImg}/>
@@ -131,7 +136,7 @@ Fatima Event Planners
             </Text>
                 </View>
               </View>
-              
+              </TouchableOpacity>
             </View>
             
             
