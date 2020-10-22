@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, Button, FlatList, StyleSheet } from 'react-native';
 import {data} from '../models/data';
 import Card from '../component/Card';
+import CardItemDetails from './CardItemDetails'
 
 const CardListScreen = ({navigation}) => {
 
@@ -9,7 +10,7 @@ const CardListScreen = ({navigation}) => {
         return (
             <Card 
                 itemData={item}
-                onPress={()=> {}}
+                onPress={()=> {navigation.navigate('CardItemDetails' , {itemData: item})}}
             />
         );
     };

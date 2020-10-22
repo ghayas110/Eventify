@@ -5,12 +5,12 @@ import { createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import HomeScreen from "./Homescreen";
 import DetailScreen from "./DetailScreen";
-import ProfileScreen from "./Profilescreen";
+import ProfileScreen from './ProfileScreen';
 import ExploreScreen from './ExploreScreen';
 import { View,TouchableOpacity } from 'react-native';
 import {Avatar} from 'react-native-paper';
 import CardListScreen from './CardListScreen';
-
+import CardItemDetails from './CardItemDetails'
 
 const Tab = createMaterialBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -121,6 +121,11 @@ const DetailStackScreen =({navigation})=> {
         <HomeStack.Screen 
         name="CardListScreen"
         component={CardListScreen}
+        options={{title:"Birthday Planners",headerTitleAlign: 'center',headerTintColor:"black"}} />
+          
+          <HomeStack.Screen 
+        name="CardItemDetails"
+        component={CardItemDetails}
         options={{title:"Birthday Planners",headerTitleAlign: 'center',headerTintColor:"black"}} />
       </HomeStack.Navigator>
       )
