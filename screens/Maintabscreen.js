@@ -5,7 +5,7 @@ import { createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import HomeScreen from "./Homescreen";
 import DetailScreen from "./DetailScreen";
-import ProfileScreen from './ProfileScreen';
+import ProfileScreen from './Profilescreen';
 import ExploreScreen from './ExploreScreen';
 import { View,TouchableOpacity } from 'react-native';
 import {Avatar} from 'react-native-paper';
