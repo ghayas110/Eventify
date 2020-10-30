@@ -48,7 +48,7 @@ const Images = [
       image: Images[2].image,
       rating: 3,
       reviews: 220,
-      categories: ['Birthday,Wedding'],
+      categories: ['Birthday','Wedding'],
     },
 
   ];
