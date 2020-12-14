@@ -43,7 +43,8 @@ export default function MyTabs() {
             tabBarIcon: ({ color }) => (
               <MaterialCommunityIcons name="bell" color={color} size={26} />
             ),
-          }}
+          }
+        }
         />
         <Tab.Screen
           name="Profile"
