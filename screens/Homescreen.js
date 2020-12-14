@@ -4,7 +4,6 @@ import DetailScreen from "./DetailScreen";
 import Swiper from 'react-native-swiper/src';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Fontisto from 'react-native-vector-icons/Fontisto';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import StarRating from "../component/StarRating";
 import CardListScreen from './CardListScreen';
