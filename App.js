@@ -10,7 +10,6 @@ import DrawerContent from './screens/DrawerContent';
 import RootStackScreen from './screens/RootStackScreen';
 import SignUpScreen from './screens/SignUpScreen';
 
-
 const Drawer = createDrawerNavigator();
 export default function App() {
   return (

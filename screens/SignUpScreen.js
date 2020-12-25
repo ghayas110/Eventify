@@ -80,7 +80,7 @@ const SigninScreen =({navigation})=> {
                 <View style ={styles.action}>
                     <FontAwesome 
                     name="user-o"
-                    color="black"
+                    color="blue"
                     size={20}
                     />
                     <TextInput
