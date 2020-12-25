@@ -8,7 +8,7 @@ import MyTabs from './screens/Maintabscreen';
 import React from 'react';
 import DrawerContent from './screens/DrawerContent';
 import RootStackScreen from './screens/RootStackScreen';
-import SplashScreen from './screens/SplashScreen';
+import SignUpScreen from './screens/SignUpScreen';
 
 
 const Drawer = createDrawerNavigator();
@@ -16,7 +16,7 @@ export default function App() {
   return (
    
     <NavigationContainer>
-      <SplashScreen/>
+      <SignUpScreen/>
     {/* <Drawer.Navigator initialRouteName="Home" drawerContent={props=><DrawerContent {...props}/>}>
       <Drawer.Screen name="Home" component={MyTabs} />
     
