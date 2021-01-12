@@ -15,11 +15,11 @@ export default function App() {
   return (
    
     <NavigationContainer>
-      <SignUpScreen/>
-    {/* <Drawer.Navigator initialRouteName="Home" drawerContent={props=><DrawerContent {...props}/>}>
+      {/* <SignUpScreen/> */}
+    <Drawer.Navigator initialRouteName="Home" drawerContent={props=><DrawerContent {...props}/>}>
       <Drawer.Screen name="Home" component={MyTabs} />
     
-    </Drawer.Navigator> */}
+    </Drawer.Navigator> 
   </NavigationContainer>
   
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { Text, View, StyleSheet, StatusBar, TouchableOpacity } from 'react-native'
 import * as Animatable from 'react-native-animatable';
 import { LinearGradient } from 'expo-linear-gradient';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import {MaterialIcons} from 'react-native-vector-icons/MaterialIcons';
 const SplashScreen =({navigation})=> {
         return (
             <View style={styles.container}>
