@@ -61,7 +61,7 @@ export default function MyTabs() {
           name="Explore"
           component={ExploreScreen}
           options={{
-            tabBarLabel: 'Profile',
+            tabBarLabel: 'Explore',
             tabBarColor:"coral",
             tabBarIcon: ({ color }) => (
               <MaterialCommunityIcons name="web" color={color} size={26} />
@@ -108,11 +108,9 @@ const DetailStackScreen =({navigation})=> {
                   navigation.navigate('Profile');
                 }}>
                 <Avatar.Image
-                  source={{
-                    uri:
-                      'https://scontent.fkhi16-1.fna.fbcdn.net/v/t1.0-9/50692581_2002307873183710_7186366634313908224_n.jpg?_nc_cat=111&_nc_sid=174925&_nc_eui2=AeGsp73SPPrioeMpRDJET8SYFA3ImDIwBugUDciYMjAG6MCK9f_XCz091fXBqfb93V6ehvn1M_CtCNLl95CaOLH5&_nc_ohc=PQ7x1zvrXzkAX9wEDr7&_nc_ht=scontent.fkhi16-1.fna&oh=4b89e991fae05063bd429aa07373a3f1&oe=5F8F880A',
-                  }}
-                  size={30}
+               source={require('../assets/ghayas.jpg' ) }
+               size={40}
+ 
                 />
               </TouchableOpacity>
             </View>
@@ -122,12 +120,12 @@ const DetailStackScreen =({navigation})=> {
         <HomeStack.Screen 
         name="CardListScreen"
         component={CardListScreen}
-        options={{title:"Birthday Planners",headerTitleAlign: 'center',headerTintColor:"black"}} />
+        options={{title:" Planners",headerTitleAlign: 'center',headerTintColor:"black"}} />
           
           <HomeStack.Screen 
         name="CardItemDetails"
         component={CardItemDetails}
-        options={{title:"Birthday Planners",headerTitleAlign: 'center',headerTintColor:"black"}} />
+        options={{title:" Planners",headerTitleAlign: 'center',headerTintColor:"black"}} />
       </HomeStack.Navigator>
       )
     }
@@ -138,7 +136,7 @@ const DetailStackScreen =({navigation})=> {
           backgroundColor:"red",   
         }
       }}>
-        <ProfileStack.Screen name="Profile" component={ProfileScreen} options={{headerTitleAlign: 'center',headerTintColor:"white" }}/>
+           <ProfileStack.Screen name="Profile" component={ProfileScreen} options={{headerTitleAlign: 'center',headerTintColor:"white" } } />
       </ProfileStack.Navigator>
       )
     }

@@ -9,17 +9,19 @@ import React from 'react';
 import DrawerContent from './screens/DrawerContent';
 import RootStackScreen from './screens/RootStackScreen';
 import SignUpScreen from './screens/SignUpScreen';
+import ExploreScreen from './screens/ExploreScreen';
+import SigninScreen from './screens/SignInScreen';
 
 const Drawer = createDrawerNavigator();
 export default function App() {
   return (
-   
+  //  <ExploreScreen/>
     <NavigationContainer>
-      {/* <SignUpScreen/> */}
-    <Drawer.Navigator initialRouteName="Home" drawerContent={props=><DrawerContent {...props}/>}>
-      <Drawer.Screen name="Home" component={MyTabs} />
-    
-    </Drawer.Navigator> 
+       {/* <SignUpScreen/>  */}
+ <Drawer.Navigator initialRouteName="Home" drawerContent={props=><DrawerContent {...props}/>}>
+    <Drawer.Screen name="Home" component={MyTabs} />
+  
+  </Drawer.Navigator> 
   </NavigationContainer>
   
 

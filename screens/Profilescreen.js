@@ -8,7 +8,7 @@ import {
   TouchableRipple,
 } from 'react-native-paper';
 
-import {Icon} from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
 
@@ -55,7 +55,7 @@ const ProfileScreen = () => {
             borderRightColor: '#dddddd',
             borderRightWidth: 1
           }]}>
-            <Title>₹140.50</Title>
+            <Title>Rs40.50</Title>
             <Caption>Wallet</Caption>
           </View>
           <View style={styles.infoBox}>

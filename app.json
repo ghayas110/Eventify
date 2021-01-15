@@ -5,11 +5,14 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+     
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "key":"AIzaSyCMVbxUo4OA-3hIiGm_AR11F8qgwEKDocE" 
     },
+    
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -17,7 +20,7 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true 
     },
     "web": {
       "favicon": "./assets/favicon.png"

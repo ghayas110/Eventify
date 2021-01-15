@@ -24,23 +24,17 @@ export default function HomeScreen({navigation}) {
 <View style={styles.categoryContainer}>
   <TouchableOpacity style={styles.categoryBtn} onPress={()=>navigation.navigate(CardListScreen)}>
 <View style={styles.categoryIcon}>
-<MaterialCommunityIcons 
-                name="cake"
-                size={35}
-                color='black'
-                onPress={() => {}}
-              />
-              
+<Image source={require('../assets/cake.png' ) }    size={35} style={styles.categoryIcon}/>
 </View>
 <Text style={styles.categoryBtnTxt}>Birthday Party</Text>
 </TouchableOpacity>
-<TouchableOpacity style={styles.categoryBtn} onPress={()=>{}}>
+<TouchableOpacity style={styles.categoryBtn} onPress={()=>navigation.navigate(CardListScreen)}>
 <View style={styles.categoryIcon}>
 <Image source={require('../assets/mar.png' ) }    size={35} style={styles.categoryIcon}/>
 </View>
 <Text style={styles.categoryBtnTxt}>Marrige Halls</Text>
 </TouchableOpacity>
-<TouchableOpacity style={styles.categoryBtn} onPress={()=>{}}>
+<TouchableOpacity style={styles.categoryBtn} onPress={()=>navigation.navigate(CardListScreen)}>
 <View style={styles.categoryIcon}>
 <Image source={require('../assets/party.png' ) }    size={35} style={styles.categoryIcon}/>
 
@@ -51,36 +45,21 @@ export default function HomeScreen({navigation}) {
 <View style={styles.categoryContainer}>
   <TouchableOpacity style={styles.categoryBtn} onPress={()=>{}}>
 <View style={styles.categoryIcon}>
-<MaterialCommunityIcons 
-                name="hotel"
-                size={35}
-                color='black'
-                onPress={() => {}}
-              />
+<Image source={require('../assets/hotel.png' ) }    size={35} style={styles.categoryIcon}/>
             
 </View>
 <Text style={styles.categoryBtnTxt}>Book Hotel</Text>
 </TouchableOpacity>
-<TouchableOpacity style={styles.categoryBtn} onPress={()=>{}}>
+<TouchableOpacity style={styles.categoryBtn} onPress={()=>navigation.navigate(CardListScreen)}>
 <View style={styles.categoryIcon}>
 
-<MaterialIcons 
-                name="event"
-                size={35}
-                color='black'
-                onPress={() => {}}
-              />
+<Image source={require('../assets/event.png' ) }    size={25} style={styles.categoryIcon}/>
 </View>
 <Text style={styles.categoryBtnTxt}>Book Event</Text>
 </TouchableOpacity>
 <TouchableOpacity style={styles.categoryBtn} onPress={()=>{}}>
 <View style={styles.categoryIcon}>
-<MaterialIcons 
-                name="expand-more"
-                size={35}
-                
-                onPress={() => {}}
-              />
+<Image source={require('../assets/expand_more.png' ) }    size={25} style={styles.categoryIcon}/>
 </View>
 <Text style={styles.categoryBtnTxt}>Expand More</Text>
 </TouchableOpacity>
@@ -97,7 +76,7 @@ export default function HomeScreen({navigation}) {
                   <Text style={styles.cardTitle}>
 MIP Event Planners
                   </Text>
-                  <StarRating ratings={4} reviews={99} />
+                  
                   <Text style={styles.cardDetails}>
               Amazing description for this amazing place
             </Text>
@@ -113,7 +92,7 @@ MIP Event Planners
                   <Text style={styles.cardTitle}>
 Shah Event Planners
                   </Text>
-                  <StarRating ratings={3} reviews={59} />
+                  
                   <Text style={styles.cardDetails}>
               Amazing description for this amazing place
             </Text>
@@ -129,7 +108,7 @@ Shah Event Planners
                   <Text style={styles.cardTitle}>
 Fatima Event Planners
                   </Text>
-                  <StarRating ratings={3} reviews={59} />
+                  
                   <Text style={styles.cardDetails}>
               Amazing description for this amazing place
             </Text>
